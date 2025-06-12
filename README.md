@@ -50,7 +50,7 @@
 | 模型版本 | Backbone | Optimizer | Epochs | mAP@0.5:0.95 |
 |----------|----------|-----------|--------|--------------|
 | YOLOv7-tiny | YOLOv7 | SGD | 50 | 中等表現 |
-| YOLOv12n   | YOLOv12 | SGD | 78 (early stopping) | 表現最佳 ✅ |
+| YOLOv12n   | YOLOv12 | SGD | 50 | 表現最佳 ✅ |
 
 - YOLOv12 表現略優於 YOLOv7，故作為最終部署版本  
 - 水平翻轉資料增強已關閉，保留影像方向資訊以提升方向燈判別準確率  
