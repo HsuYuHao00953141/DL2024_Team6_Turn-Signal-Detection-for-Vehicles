@@ -75,10 +75,17 @@
 ## 📸 測試成果展示
 
 - 正確辨識案例：  
-  - ✅ 左右打燈車輛辨識  
-  - ✅ 無打燈車輛辨識  
+  - ✅ 左右打燈車輛辨識
+    ![](./YOLOv12_detect_result/turn-left-with-light.gif)  
+    ![](./YOLOv12_detect_result/turn-right-with-light.gif)
+  - ✅ 無打燈車輛辨識
+    ![](./YOLOv12_detect_result/turn-left-without-light1.gif)  
+    ![](./YOLOv12_detect_result/turn-left-without-light2.gif)
 - 錯誤案例：  
   - ❌ 特殊車種誤判方向燈
+    ![](./YOLOv12_detect_result/error-detect1.gif)  
+    ![](./YOLOv12_detect_result/error-detect2.gif)  
+    ![](./YOLOv12_detect_result/error-detect3.gif)
 
 ---
 
