@@ -19,8 +19,6 @@
 | [`YOLOv12_training_result`](./YOLOv12_training_result) | 使用 YOLOv12 模型的訓練記錄、圖表與最終模型 |
 | [`tool_code`](./tool_code) | 影像切割、標註轉換與預處理等自訂工具程式 |
 | [`Dataset`](./Dataset) | 資料集說明與標註策略（原始圖片未包含於本專案） |
-| `best.pt` | YOLOv12 訓練後表現最佳的模型權重檔案 |
-| `yolo_colab.ipynb` | YOLO 訓練與推論流程之 Colab 腳本 |
 
 ---
 
@@ -32,6 +30,18 @@
   - **大框 (Case1)**：涵蓋整台車輛（含輪胎與燈號），提升判斷準確率  
   - **小框 (Case2)**：僅針對燈號位置，結果不穩定，已棄用  
 - **最終標籤類別**：左轉、右轉、未打燈（三類）
+- **label class**: "turn_right = 0"、"trurn_left = 1"、"turn_without_light = 2"
+
+---
+
+## 🔗 YOLO 原始碼來源
+
+本專案使用以下開源 YOLO 模型進行訓練與測試：
+
+- [YOLOv12 - by sunsmarterjie](https://github.com/sunsmarterjie/yolov12)  
+- [YOLOv7 - by WongKinYiu](https://github.com/WongKinYiu/yolov7)
+
+感謝原始開發者提供高效的物件偵測框架，使本專題得以順利實作與推進。
 
 ---
 
