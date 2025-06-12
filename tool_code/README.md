@@ -16,25 +16,4 @@
 | `img_label.py` | 繪製圖片上的標註框（根據 YOLO 標註檔繪圖） |
 | `tool.py` | 綜合工具腳本，可整合執行多項前處理步驟 |
 
----
 
-## 📌 使用建議
-
-- **LabelMe 標註** → `json_to_txt.py` → 轉為 YOLO 格式
-- **影片擷取圖片** → `get_images_from_video.py`
-- **標籤修正/重分類** → 使用 `change_*.py` 系列腳本
-- **標註視覺化確認** → `img_label.py`
-
----
-
-## 🔧 執行範例
-
-```bash
-# 影片擷取圖片
-python get_images_from_video.py --video input.mp4 --output frames/
-
-# 標註轉換
-python json_to_txt.py --input json_folder --output yolo_label_folder
-
-# 視覺化
-python img_label.py --image img.jpg --label img.txt
